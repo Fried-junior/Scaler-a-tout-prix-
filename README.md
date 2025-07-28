@@ -1,2 +1,6 @@
 # Analyse appliquée
 Scaler à tout prix ? Anatomie d’un basculement en déséconomies d’échelle
+
+L’étude diagnostique un recul de marge via l’analyse des économies/déséconomies d’échelle sur des séries trimestrielles 2011‑2024. Les coûts unitaires, outputs et inputs sont log-transformés puis modélisés par une Cobb‑Douglas estimée en Ridge (λ choisi par validation croisée glissante), avec variance robuste HAC et bootstrap blocs pour la robustesse. Trois phases homogènes sont distinguées : fortes économies d’échelle (Σβ = 0,74), renforcement de l’efficience (Σβ = 0,59), puis bascule en déséconomies (Σβ ≈ 1,07). L’estimation mobile met en évidence le point de retournement : à partir de 2023, Σβ > 1 et le coût unitaire est multiplié par \~4 en deux ans.
+
+Le diagnostic pointe un sur‑investissement parallèle (produits C & D), une duplication d’infrastructures data/IoT et un pilotage tardif des indicateurs. Les recommandations : pilotage récurrent de Σβ par ligne de produit, dashboard FinOps & marge, rationalisation technique (mutualiser GPU/logs/stockage, clarifier run vs build), réallocation des CAPEX et priorisation de la roadmap (stop/persevere/scale), stress‑test du BP à 3 ans, et un sprint court “FinOps + pricing” (gel partiel des recrutements R\&D, renégociation/rightsizing cloud, arrêt des features non essentielles avant mise en marché).
